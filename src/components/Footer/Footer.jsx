@@ -11,7 +11,19 @@ const quickLinks = [
   },
 
   {
-    path: "#",
+    path: "/refund",
+    display: "Refund And Returns Policy",
+  },
+  {
+    path: "/shipping",
+    display: "Shipping Policy",
+  },
+  {
+    path: "/termscondition",
+    display: "Terms And Conditions",
+  },
+  {
+    path: "/privacy",
     display: "Privacy Policy",
   },
 

@@ -7,6 +7,10 @@ import NotFound from "../pages/NotFound";
 import Contact from "../pages/Contact";
 import Locate from "../pages/Locate";
 import Shop from "../components/UI/Shop";
+import Privacy from "../pages/Privacy";
+import Refund from "../pages/Refund";
+import Shipping from "../pages/Shipping";
+import TermsCondition from "../pages/TermsCondition";
 
 const Routers = () => {
   return (
@@ -17,6 +21,10 @@ const Routers = () => {
       <Route path="/shop" element={<Shop />} />
       <Route path="/locate" element={<Locate />} />
       <Route path="/contact" element={<Contact />} />
+      <Route path="/privacy" element={<Privacy />} />
+      <Route path="/refund" element={<Refund />} />
+      <Route path="/shipping" element={<Shipping />} />
+      <Route path="/termscondition" element={<TermsCondition />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
   );
