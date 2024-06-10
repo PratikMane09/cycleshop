@@ -1,0 +1,358 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Jost", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+  font-size: 2rem;
+}
+.text-uppercase {
+text-transform: uppercase!important;
+}
+/* 
+ 
+
+/* menu-link style start  */
+
+.main-nav {
+  width: 100%;
+  height: 10rem;
+  display: grid;
+  grid-template-columns: 10rem 1fr 2fr 1fr 10rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.logo {
+  display: grid;
+  /* background-color: #3b5998; */
+  grid-column: 2/3;
+  justify-content: start;
+  align-items: center;
+}
+
+.menu-link {
+  grid-column: 3/4;
+}
+
+.menu-link ul {
+  height: 10rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.media {
+  grid-column: 4/5;
+}
+
+.media ul {
+  height: 10rem;
+  display: grid;
+  grid-template-columns: 3fr repeat(3, 1fr);
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.media ul li {
+  text-align: right;
+}
+
+.media ul li:first-child {
+  grid-column: 2/3;
+}
+
+/* ----------- Grid part ends ----------------- */
+
+.logo h2 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  background: -webkit-linear-gradient(#eee, rgb(69, 57, 248));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.logo h2 span {
+  font-size: 3.5rem;
+}
+
+.menu-link {
+    padding: 0;
+    }
+    
+    .menu-link ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    font-size: 22px;
+    }
+    
+    .menu-link li {
+    position: relative;
+    
+    }
+    
+    .menu-link>ul>li {
+    white-space: nowrap;
+    padding: 10px 0 10px 28px;
+    }
+    
+    .menu-link a,
+    .menu-link a:focus {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color:black;
+    white-space: nowrap;
+    transition: 0.3s;
+    position: relative;
+    }
+    
+    .menu-link a i,
+    .menu-link a:focus i {
+    font-size: 12px;
+    line-height: 0;
+    margin-left: 5px;
+    }
+    
+    .menu-link>ul>li>a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -6px;
+    left: 0;
+    background-color:black;
+    visibility: hidden;
+    width: 0px;
+    transition: all 0.3s ease-in-out 0s;
+    }
+    
+    .menu-link a:hover:before,
+    .menu-link li:hover>a:before,
+    .menu-link .active:before {
+    visibility: visible;
+    width: 100%;
+    }
+    
+    .menu-link a:hover,
+    .menu-link .active,
+    .menu-link .active:focus,
+    .menu-link li:hover>a {
+    color:black;
+    text-decoration: none;
+    }
+    
+    
+    .menu-link .dropdown ul li {
+    min-width: 200px;
+    }
+    
+    .menu-link .dropdown ul a {
+    padding: 10px 20px;
+    font-size: 15px;
+    text-transform: none;
+    font-weight: 600;
+    }
+    
+    .menu-link .dropdown ul a i {
+    font-size: 12px;
+    }
+    
+    .menu-link .dropdown ul a:hover,
+    .menu-link .dropdown ul .active:hover,
+    .menu-link .dropdown ul li:hover>a {
+    color: var(--color-primary);
+    }
+    
+    .menu-link .dropdown:hover>ul {
+    opacity: 1;
+    top: 100%;
+    visibility: visible;
+    }
+    
+    .menu-link .dropdown .dropdown ul {
+    top: 0;
+    left: calc(100% - 30px);
+    visibility: hidden;
+    }
+    
+    .menu-link .dropdown .dropdown:hover>ul {
+    opacity: 1;
+    top: 0;
+    left: 100%;
+    visibility: visible;
+    }
+
+
+/* hero section   */
+
+
+
+/* responsive css style  */
+@media (max-width: 1080px) {
+  .main-nav {
+    height: 8rem;
+    grid-template-columns: 2rem 3fr 3fr 1fr 2rem;
+  }
+
+  .logo,
+  .menu-link ul,
+  .media ul {
+    height: 8rem;
+  }
+}
+
+/* responsive css style  */
+@media (max-width: 998px) {
+  .main-nav {
+    height: 7rem;
+    grid-template-columns: 2rem 2fr 3fr 2rem 2rem;
+  }
+
+  .menu-link {
+    display: none;
+  }
+
+  .logo,
+  .media ul {
+    height: 7rem;
+  }
+
+  .mobile-menu-link {
+    grid-column: 2/4;
+    position: relative;
+    z-index: 99;
+  }
+
+  .mobile-menu-link {
+    background-color: white;
+    height: 20rem;
+    display: grid;
+    grid-column: 2/5;
+    align-items: center;
+    padding-left: 3rem;
+    transition: all 2s linear;
+    transform-origin: top;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+      rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  }
+
+  .mobile-menu-link ul {
+    height: 20rem;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .mobile-menu-link ul li:first-child {
+    transition-delay: 0.2s;
+  }
+
+  .media {
+    grid-row: 1/2;
+    grid-column: 3/5;
+    justify-items: end;
+    align-items: center;
+    transition: all 2s linear;
+  }
+
+  .media .media-desktop {
+    height: 0;
+    display: none;
+  }
+
+  .media {
+    height: 7rem;
+    display: flex;
+    justify-self: end;
+    align-items: center;
+  }
+
+  .media .hamburger-menu {
+    display: block;
+    font-size: 2.5rem;
+  }
+  
+}
+
+@media (max-width: 798px) {
+  .main-nav {
+    height: 6rem;
+    grid-template-columns: 1rem 2fr 1fr 1fr 1rem;
+  }
+
+  .logo,
+  .media ul {
+    height: 6rem;
+  }
+
+  .media {
+    height: 6rem;
+    display: flex;
+    justify-self: end;
+    align-items: center;
+  }
+
+  .media .hamburger-menu {
+    display: block;
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 520px) {
+  .main-nav {
+    height: 6rem;
+    grid-template-columns: 1rem 4fr 1fr 1fr 1rem;
+  }
+
+  .logo,
+  .media ul {
+    height: 6rem;
+  }
+
+  .logo h2 {
+    font-size: 2rem;
+  }
+
+  .media {
+    height: 6rem;
+    display: flex;
+    justify-self: end;
+    align-items: center;
+  }
+
+  .media .hamburger-menu {
+    display: block;
+    font-size: 2.5rem;
+  }
+  .hamburger-menu{
+    visibility: hidden;
+  }
+  /* hero section  */
+
+  .hero-section h1 {
+    font-size: 3.8rem;
+  }
+}
