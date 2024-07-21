@@ -1,0 +1,118 @@
+.service__item span i {
+  font-size: 3rem;
+  color: orange;
+}
+
+.service__item h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  transition: 0.3s;
+  padding-left: 25%;
+}
+
+.service__item p {
+  font-size: 1rem;
+  font-weight: 400;
+  transition: 0.3s;
+  padding-left: 20%;
+}
+.service__item h2:hover {
+  color: orange;
+}
+
+.service__item .icon:hover {
+  color: #fff;
+}
+.icon {
+  position: relative;
+  width: 175px;
+  height: 175px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 180px;
+  font-size: 56px;
+  color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  margin-bottom: 40px;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  border: 1px solid orange;
+  color: orange;
+}
+.service__item .item:hover .icon {
+  background: orange;
+  color: #fff;
+  border: 1px solid orange;
+}
+.service__item .item [class*="fa"] {
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.service__item .item:hover [class*="fa"] {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  color: #fff;
+}
+@media only screen and (max-width: 768px) {
+  .service__item h6 {
+    font-size: 1.1rem;
+  }
+}
+
+/* .services {
+	margin-top:80px;
+	margin-bottom:40px;
+}
+.services .icon {
+	position:relative;
+	width:175px;
+	height:175px;
+	margin:0 auto;
+	text-align:center;
+	line-height:180px;
+	font-size:56px;
+	color:#fff;
+	border-radius:50%;
+	box-shadow:0 0 0 0 rgba(0,0,0,0.0);
+	margin-bottom:40px;
+	-webkit-transition:all .3s ease-out;
+	transition:all .3s ease-out;
+	border: 1px solid orange;
+	color: orange;
+}
+.services .item:hover .icon {
+	background: orange;
+	border: 1px solid orange;
+}
+.services .item [class*=fa] {
+	-webkit-transition:all .3s ease-out;
+	transition:all .3s ease-out;
+}
+.services .item:hover [class*=fa] {
+	-webkit-transform:scale(1.2);
+	transform:scale(1.2);
+	-webkit-transition:all .3s ease-out;
+	transition:all .3s ease-out;
+	color:#fff;
+}
+.features-wrapper {
+	margin:70px 0 0;
+}
+i.respons {
+	position:relative;
+	width:35px;
+	height:35px;
+	margin:0 auto;
+	line-height:35px;
+	text-align:center;
+	font-size:15px;
+	color:#fff;
+	border-radius:50%;
+	-webkit-transition:all .3s ease-out;
+	transition:all .3s ease-out;
+	border:1px solid #CCCCCC;
+	color: #CCCCCC;
+} */

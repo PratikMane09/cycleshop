@@ -1,0 +1,9 @@
+.common__section {
+  background: url("../assets/all-images/drive.jpg");
+
+  background-color: white;
+  background-position: center;
+  /* background-size: cover; */
+  background-repeat: no-repeat;
+  padding: 120px 50%;
+}
